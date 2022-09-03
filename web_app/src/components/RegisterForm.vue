@@ -71,13 +71,13 @@ export default {
       registreation_fun(){
         if (this.password != this.re_password) {
           alert('Passwor are not same')
-        }
+        }else{
         this.$emit('registeration_form_data_child' , {
           'request_type' : 'registeration' ,
           'fullname' : this.name,
           'email' : this.email , 
           'password' : this.password
-          })
+          })}
       },
 
       go_to_login(){
